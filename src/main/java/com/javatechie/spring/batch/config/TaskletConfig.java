@@ -20,18 +20,13 @@ public class TaskletConfig {
 
     private JobBuilderFactory jobBuilderFactory;
     private StepBuilderFactory stepBuilderFactory;
-    private CustomerRepository customerRepository;
+    private MyTasklet myTasklet;
 
-
-    @Bean
-    public Tasklet myTasklet() {
-        return new MyTasklet(customerRepository);
-    }
 
     @Bean
     public Step myStep() {
         return stepBuilderFactory.get("myStep")
-                .tasklet(myTasklet())  // Use the Tasklet bean here
+                .tasklet(myTasklet)  // Use the Tasklet bean here
                 .build();
     }
 

@@ -12,7 +12,9 @@ import org.springframework.batch.item.file.mapping.DefaultLineMapper;
 import org.springframework.batch.item.file.transform.DelimitedLineTokenizer;
 import org.springframework.batch.repeat.RepeatStatus;
 import org.springframework.core.io.FileSystemResource;
+import org.springframework.stereotype.Service;
 
+@Service
 public class MyTasklet implements Tasklet {
 
     private final CustomerRepository customerRepository;

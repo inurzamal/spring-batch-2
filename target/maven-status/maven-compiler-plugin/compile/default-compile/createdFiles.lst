@@ -1,0 +1,6 @@
+com\javatechie\spring\batch\controller\JobController.class
+com\javatechie\spring\batch\repository\CustomerRepository.class
+com\javatechie\spring\batch\BatchProcessingDemoApplication.class
+com\javatechie\spring\batch\config\TaskletConfig.class
+com\javatechie\spring\batch\config\MyTasklet.class
+com\javatechie\spring\batch\entity\Customer.class
